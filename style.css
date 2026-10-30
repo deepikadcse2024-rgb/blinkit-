@@ -1,0 +1,235 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+.blinkit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 3%;
+    border-bottom: 1px solid #eeeeee;
+    gap: 20px;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f8c52b;
+}
+.logo span {
+    color: #54a846;
+}
+.location h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.location p {
+    font-size: 11px;
+    color: gray;
+}
+.search {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 13px;
+    border-radius: 10px;
+    flex: 1;
+}
+.search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.login {
+    background: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.cart {
+    background: #eeeeee;
+    border: none;
+    padding: 13px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.blinkit {
+    margin: 20px auto;
+    width: 85%;
+    min-height: 200px;
+    border-radius: 10px;
+    background: linear-gradient(100deg, #287b39, #6ebd63);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+    color: white;
+}
+
+.banner-text h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.banner-text p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    max-width: 430px;
+}
+
+.banner-text button {
+    background: white;
+    border: none;
+    padding: 9px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.banner-image {
+    font-size: 55px;
+}
+.offers {
+    width: 85%;
+    margin: 20px auto;
+    display: flex;
+    gap: 15px;
+}
+
+.offer {
+    flex: 1;
+    min-height: 145px;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offer h3 {
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+
+.offer p {
+    font-size: 12px;
+    margin-bottom: 12px;
+    max-width: 140px;
+}
+
+.offer button {
+    background: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 12px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.offer span {
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+    font-size: 50px;
+}
+
+.pharmacy {
+    background: #09bcb3;
+    color: white;
+}
+
+.pets {
+    background: #ffcc38;
+    color: #222;
+}
+
+.baby {
+    background: #e3e9f0;
+    color: #333;
+}
+
+/* Categories */
+.categories {
+    width: 85%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 15px;
+}
+
+.category {
+    text-align: center;
+    cursor: pointer;
+}
+
+.product {
+    background: #f0f5fa;
+    border-radius: 8px;
+    padding: 15px 5px;
+    font-size: 35px;
+    margin-bottom: 7px;
+}
+
+.category p {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .search {
+        order: 5;
+        flex-basis: 100%;
+    }
+
+    .categories {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .main-banner,
+    .offers,
+    .categories {
+        width: 94%;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 23px;
+    }
+
+    .offers {
+        flex-direction: column;
+    }
+
+    .categories {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .location p {
+        display: none;
+    }
+
+    .cart {
+        padding: 10px;
+    }
+}
